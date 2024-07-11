@@ -1,0 +1,90 @@
+/* universal css */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: lightblue;
+}
+
+
+/* css for home page */
+.navbar{
+    height:80px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+}
+
+.homebtn{
+    height:80px;
+    width: 100px;
+    background-color: rgb(225, 127, 127);
+    color:rgb(239, 234, 234);
+}
+
+.homebtn p a{
+    font-weight: bold;
+    font-size: 15px;
+    color:black;
+}
+
+.homebtn:hover {
+    background: #e05252; /* Change background color on hover */
+    transition: background 0.3s ease-in-out; /* Add transition for smoother hover effect */
+}
+
+/* css for conten of complaint form */
+.content{
+    display:flex;
+    flex-direction:column;
+    min-height:75vh;
+}
+
+.myform{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.myinput{
+    padding:9px;
+    margin:8px;
+    width:40%;
+    font-size: 16px;
+    border:2px solid rgb(225, 127, 127);
+    outline: none;
+}
+
+.submitbtn{
+    padding:6px 16px;
+    font-size: 15px;
+    border:2px solid black;
+    border-radius: 12px;
+    color:white;
+    background: rgb(225, 127, 127);
+    cursor:pointer;
+    outline: none;
+
+}
+
+.submitbtn:hover {
+    background: #e05252; /* Change background color on hover */
+    transition: background 0.3s ease-in-out; /* Add transition for smoother hover effect */
+}
+
+
+/* css for footer */
+.footer{
+    height:120px;
+    text-align: center;
+    font-size: 20px;
+    background-color: green;
+}
+
+.footer h3{
+    padding:45px;
+}

@@ -1,0 +1,64 @@
+<!-- doctype html
+html
+  head
+    title electricity site
+    //- block scripts
+    //- block style
+  body
+    nav#navbar
+        ul
+            div#logo
+            h3 this is complaints page for department and here department people can see the complaints and the details of the person who filled yhe complaints and then can resolve them and as well as delete them when resolved
+            li #[a(href="/landingPageForDepartment") HOME];
+            //- li #[a(href="/landingPageForUsers.pug") landing page for users ]
+                //- img(src='static/glamorous-lady-dancing-clipart-xl.png')
+                //- | YDA
+            //- li #[a(href="/customerLoginPage") Customer] 
+            //- li #[a(href="/departmentLoginpage") Department] 
+            
+    
+    block content
+    | hail INDIA this is complaints page for department people and they have to get a notification whenever any new complaints is filled 
+    block foot
+        footer#footer 
+            |Copyright@ 2023cgElectricity.com All Rights Reserved  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>electricity site</title>
+  <link rel="stylesheet" type="text/css" href="/complaintsPageForDepartment.css">
+</head>
+<body>
+
+  <!--div for navbar for home page -->
+  <div class="navbar">
+    <button class ="homebtn">
+      <p><a href="/landingPageForDepartment">HOME</a></p>
+    </button>
+  </div>
+
+  <!-- div for listing all the complaints -->
+  <div class="content">
+    <h2>Complaints</h2>
+    <% complaint.forEach(complaint => { %>
+      <div class="complaint-container">
+        <strong>Name:</strong> <%= complaint.name %><br>
+        <strong>Phone:</strong> <%= complaint.phone %><br>
+        <strong>Email:</strong> <%= complaint.email %><br>
+        <strong>Address:</strong> <%= complaint.address %><br>
+        <strong>Complaint:</strong> <%= complaint.complaint %>
+      </div>
+    <% }); %>
+  </div>
+
+  <!--div for footer section  -->
+  <div class="footer">
+    <h3>This is Footer</h3>
+  </div>
+
+</body>
+</html>
+        

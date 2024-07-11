@@ -1,0 +1,65 @@
+<!-- doctype html
+html
+  head
+    title electricity site
+    //- block scripts
+    //- block style
+  body
+    nav#navbar
+        ul
+            div#logo
+            h3 this is complaints page for users and here users can file complaints about anything they want
+            li #[a(href="/landingPageForusers") HOME];
+            //- li #[a(href="/landingPageForUsers.pug") landing page for users ]
+                //- img(src='static/glamorous-lady-dancing-clipart-xl.png')
+                //- | YDA
+            //- li #[a(href="/customerLoginPage") Customer] 
+            //- li #[a(href="/departmentLoginpage") Department] 
+            
+    
+    block content
+    | hello customer this is complaints page and please feel frewe to complaint
+    block foot
+        footer#footer 
+            |Copyright@ 2023cgElectricity.com All Rights Reserved  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>electricity site</title>
+  <link rel="stylesheet" type="text/css" href="/complaintsPageForUsers.css">
+</head>
+<body>
+
+  <!--div for navbar for home page -->
+  <div class="navbar">
+    <button class ="homebtn">
+      <p><a href="/landingPageForUsers">HOME</a></p>
+    </button>
+  </div>
+
+  <!-- div for content and complaint form -->
+  <div class="content">
+    <form action="/saveComplaint" method="post" class="myform">
+      <input type="text", class="myinput", name="name", placeholder="Enter Your Name">
+      <input type="number", class="myinput", name="phone", placeholder="Enter Your Phone Number">
+      <input type="email", class="myinput", name="email", placeholder="Enter Your Email">
+      <input type="text", class="myinput", name="address", placeholder="Enter Your Address">
+      <input type="text", class="myinput", name="complaint", placeholder="Enter Your Complaint Here">
+      <button type="submit" class="submitbtn">Submit</button>
+    </form>
+  </div>
+
+
+  <!--div for footer section  -->
+  <div class="footer">
+    <h3>This is Footer</h3>
+  </div>
+
+
+
+</body>
+</html>
+        

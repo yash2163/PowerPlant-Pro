@@ -1,0 +1,47 @@
+<!-- doctype html
+html
+  head
+    title electricity site
+    //- block scripts
+    //- block style
+  body
+    nav#navbar
+        ul
+            div#logo
+            h3 Enter your detainls and login to your account or if not registered then sign up first by making a new account
+            li #[a(href="/landingPageForDepartment") landing page for department ]
+            //- li #[a(href="/customerLoginPage") Customer] 
+            //- li #[a(href="/departmentLoginpage") Department] 
+            
+    
+    block content
+    | this is department login page
+    block foot
+        footer#footer 
+            |Copyright@ 2023cgElectricity.com All Rights Reserved 
+         -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/departmentLoginPage.css">
+  <title>electricity site</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Login For Department</h2>
+    <form action="/departmentlogin" id="loginForm" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+<!-- <script src="/loginscript.js"></script> -->
+</body>
+</html>

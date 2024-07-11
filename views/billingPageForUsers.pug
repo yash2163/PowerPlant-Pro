@@ -1,0 +1,54 @@
+//- doctype html
+//- html
+//-   head
+//-     title electricity site
+//-     //- block scripts
+//-     //- block style
+//-   body
+//-     nav#navbar
+//-         ul
+//-             div#logo
+//-             h3 this is biling page for users and here users can see theirs pending bills and pay them
+//-             li #[a(href="/landingPageForusers") HOME];
+//-             //- li #[a(href="/landingPageForUsers.pug") landing page for users ]
+//-                 //- img(src='static/glamorous-lady-dancing-clipart-xl.png')
+//-                 //- | YDA
+//-             //- li #[a(href="/customerLoginPage") Customer] 
+//-             //- li #[a(href="/departmentLoginpage") Department] 
+            
+    
+//-     block content
+//-     | hello customer this is billing page and your bill is 10 thousond rupees 
+//-     block foot
+//-         footer#footer 
+//-             |Copyright@ 2023cgElectricity.com All Rights Reserved 
+
+doctype html 
+html 
+  head 
+    title electricity site 
+    style 
+      include ../public/billingPageForUsers.css 
+    script(src='../static/billingPageForUser.js')
+  body 
+    .nav_bar
+      .container1 
+        a(href="/landingPageForUsers") HOME
+        //- | this is container-1
+      .container2#cont2
+        button.button(
+          class="button"
+          id="btn"
+          onclick="changeColor()"
+        ) click me
+        //- .button#btn #(onclick="changeColor()" 
+        //- | click me
+      .container3 
+        a(href="/customerLoginPage") Login Page
+  .textArea 
+    h2 This is billing section
+    p This is just temporary and after exerything is completed we will dea with this later. In total there are 11 pages i have to design and i am gonna give every page a number and according to that number we will complete the project . All these number is purely based on doablity and importance .When completing the page we will do the CSS and Javascript again.
+    h1 PagePoint-11
+
+    
+        

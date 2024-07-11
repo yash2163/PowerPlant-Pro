@@ -1,0 +1,58 @@
+<!-- doctype html
+html
+  head
+    title electricity site
+    //- block scripts
+    //- block style
+  body
+    nav#navbar
+        ul
+            div#logo
+            h3 this is updates page for department and here department  can post about any updates related to electricity 
+            li #[a(href="/landingPageForDepartment") HOME];
+            //- li #[a(href="/landingPageForUsers.pug") landing page for users ]
+                //- img(src='static/glamorous-lady-dancing-clipart-xl.png')
+                //- | YDA
+            //- li #[a(href="/customerLoginPage") Customer] 
+            //- li #[a(href="/departmentLoginpage") Department] 
+            
+    
+    block content
+    | hail INDIA this is updates page and here ypu can inform the users about any updates they need to know
+    block foot
+        footer#footer 
+            |Copyright@ 2023cgElectricity.com All Rights Reserved 
+         -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>electricity site</title>
+  <link rel="stylesheet" type="text/css" href="/updatesPageForDepartment.css">
+</head>
+<body>
+  <!--div for navbar for home page -->
+  <div class="navbar">
+    <button class ="homebtn">
+      <p><a href="/landingPageForDepartment">HOME</a></p>
+    </button>
+  </div>
+  
+  <!-- div for the main content and updates form-->
+  <div class="content">
+    <form action="/saveUpdate" method="post" class="myform">
+      <textarea name="update" class="myinput" rows="4" cols="50" placeholder="Enter Any Updates Here" ></textarea>
+      <button type="submit" class="submitbtn">Submit</button>
+    </form>
+  </div>
+
+
+  <!--div for footer section  -->
+  <div class="footer">
+    <h3>This is Footer</h3>
+  </div>
+
+</body>
+</html>
